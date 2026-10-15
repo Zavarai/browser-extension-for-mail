@@ -1,0 +1,15 @@
+/* Стили для индикаторов фишинга */
+.phishing-indicator {
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.phishing-indicator:hover {
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Убираем лишние отступы у строк с индикаторами */
+div[style*="position: relative"] {
+  padding-right: 40px !important;
+}
